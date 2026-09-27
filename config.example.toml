@@ -1,0 +1,21 @@
+[datadog]
+site = "datadoghq.eu"
+page_size = 100
+timeout_seconds = 20
+include_powerpacks = true
+
+[selection]
+# Empty include lists mean all dashboards. Any include rule may match.
+include_ids = []
+include_titles = []
+include_tags = []
+# Exclude rules always win. Title and tag patterns support * and ?.
+exclude_ids = []
+exclude_titles = []
+exclude_tags = []
+
+[storage]
+backend = "local"
+directory = "backups"
+keep_versions = 10
+
